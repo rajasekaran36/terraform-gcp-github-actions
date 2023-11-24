@@ -8,14 +8,6 @@ resource "google_storage_bucket" "gcs_bucket" {
   location = "europe-west2"
 }
 
-provider "google" {
-  credentials = file(var.credentials_file)
-
-  project = var.project
-  region  = var.region
-  zone    = var.zone
-}
-
 resource "google_compute_network" "vpc_network" {
   name = "terraform-raja-network"
 }
