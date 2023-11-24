@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "bucket" {
-  name     = "test-bucket-kite-project-1234"
+  name     = "test-bucket-rajasekaran-project-1234"
   location = "europe-west2"
 }
 
